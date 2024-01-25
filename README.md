@@ -53,7 +53,7 @@ The script utilizes the OpenAI GPT-3.5 model to generate examples of command usa
 
 ```
 
-This command will prompt the script to generate five examples of `ls` command usage with brief explanations.
+This command will prompt the script to generate five examples of `netstat` command usage with brief explanations.
 
 ## Requirements
 
