@@ -1,4 +1,4 @@
-# Bash Command Examples Documentation
+# AI Driven Bash Documentation
 
 This bash script is designed to interact with the OpenAI GPT-3.5 API to provide examples of bash command usage based on a provided command name. It generates short explanations for the provided bash commands.
 
@@ -7,7 +7,7 @@ This bash script is designed to interact with the OpenAI GPT-3.5 API to provide 
 Ensure you have set up your OpenAI API key in the `OPENAI_API_KEY` variable within the script.
 
 ```bash
-./bash_command_examples.sh [command_name]
+./ai.sh [command_name]
 ```
 
 Replace `[command_name]` with the bash command you want to explore.
@@ -31,7 +31,26 @@ The script utilizes the OpenAI GPT-3.5 model to generate examples of command usa
 ## Example
 
 ```bash
-./bash_command_examples.sh ls
+./ai.sh netstat
+
+1. netstat -a
+   Wyświetla wszystkie porty wraz z adresami IP na których serwer nasłuchuje.
+
+2. netstat -t
+   Wyświetla wszystkie połączenia TCP.
+
+3. netstat -u
+   Wyświetla wszystkie połączenia UDP.
+
+4. netstat -n
+   Wyświetla adresy IP w formacie liczbowym.
+
+5. netstat -p
+   Wyświetla informacje o procesach powiązanych z danymi połączeniami.
+
+
+
+
 ```
 
 This command will prompt the script to generate five examples of `ls` command usage with brief explanations.
