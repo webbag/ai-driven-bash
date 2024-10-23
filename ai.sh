@@ -1,14 +1,15 @@
 #!/bin/bash
 
+
 OPENAI_API_KEY=""
-API_URL="https://api.openai.com/v1/chat/completions"
-argument="$1"
+API_URL="http://localhost:11434/v1/chat/completions"
+argument="$@"
 REQUEST_DATA="{
-  \"model\": \"gpt-3.5-turbo\",
+  \"model\": \"mistral:latest\",
   \"messages\": [
     {
       \"role\": \"system\",
-      \"content\": \"Będzie udzielać krótkich wyjaśnień dotyczących bash w linux. Podam Tobie nazwę komendy a Ty podasz mi 5 przykładów użycia z wyjaśnieniem nie dłuższym niż 5 wyrazów.\nKażdy z przykładów w osobnym punkcie. Użyj formatowania w bash oraz kolorów. \n\"
+      \"content\": \"Jesteś ekspertem od systemu Linux Debian i służysz zawsze gotowym rozwiązaniem. Będę zadawać Ci pytania w różnych formach. Twoja odpowiedź będzie zależna od formy mojego pytania. \n\nPrzykłady:\nJeśli użyję jednego wyrazu, potraktuj to jako polecenie bash. Zachowuj się jak Linux Manual i podaj 5 zaawansowanych przykładów użycia polecenia.\nJeśli otrzymasz więcej niż jedno słowo, potraktuj to jako pytanie i udziel odpowiedzi jako mój partner do konfiguracji i administracji systemu Linux.\n\"
     },
     {
       \"role\": \"user\",
